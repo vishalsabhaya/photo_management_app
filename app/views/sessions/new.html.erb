@@ -1,0 +1,19 @@
+<h1> <%= t('user_login.title') %></h1>
+<% page_title t('user_login.title') %>
+<%= render 'shared/errors', {:object => @user} %>
+<div>
+  <%= form_for(:session, url: sign_in_path) do |f| %>
+    <div>
+      <%= f.label t('user_login.user_name') %>
+      <%= f.text_field :user_name, tabindex: 1 %>
+    </div>
+    <div>
+      <%= f.label t('user_login.password') %>
+      <%= f.password_field :password, tabindex: 2 %>
+    </div>
+    </br>
+    <div>
+      <%= f.submit t('button.sign_in'), tabindex:3 %>
+    </div>
+  <% end %>
+</div>

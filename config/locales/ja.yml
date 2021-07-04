@@ -1,0 +1,27 @@
+ja:
+  application_name: '写真管理'
+  activemodel:
+    attributes:
+      form_validate/sign_in:
+        user_name: "ユーザーID"
+        password: "パスワード"
+    errors:
+      models:
+        form_validate/sign_in:
+          attributes:
+            user_name:
+              blank: "を入力してください"
+            password:
+              blank: "を入力してください"
+  user_login:
+    title: 'ログイン'
+    user_name: 'ユーザー ID'
+    password: 'パスワード'
+
+  button:
+    sign_in: 'ログインする'
+    sign_out: 'ログアウト'
+
+  #error message code wise
+  E0001: '最初にログインする必要があります。'
+  E0002: 'ユーザー名とパスワードが一致しません。'

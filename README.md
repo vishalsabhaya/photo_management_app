@@ -1,6 +1,6 @@
 # Photo Management Application(写真管理アプリケーション)
 
-ユーザーごとに写真をアップロードし、写真一覧を表示します。 OAuth統合を使用して写真をサーバーにツイートします。
+Upload a photo for each user and display a list of photos. Tweet photos to the server using OAuth integration.
 
 ## Getting Started
 
