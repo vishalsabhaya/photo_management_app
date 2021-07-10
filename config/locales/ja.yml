@@ -10,18 +10,44 @@ ja:
         form_validate/sign_in:
           attributes:
             user_name:
-              blank: "を入力してください"
+              blank: "を入力してください。"
             password:
-              blank: "を入力してください"
+              blank: "を入力してください。"
+  activerecord:
+    attributes:
+      image:
+        title: "タイトル"
+        image_attached: '画像ファイル'
+    errors:
+      models:
+        image:
+          attributes:
+            title:
+              blank: "を入力してください。"
+              too_long: "の文字数が30文字を超えている。"
   user_login:
     title: 'ログイン'
     user_name: 'ユーザー ID'
     password: 'パスワード'
 
+  image_list:
+    title: '写真一覧'
+
+  image_upload:
+    title: '写真アップロード'
+    image_title: 'タイトル'
+    image_file: '画像ファイル'
+
   button:
     sign_in: 'ログインする'
     sign_out: 'ログアウト'
+    upload: 'アップロード'
+    cancel: 'キャンセル'
+
+  # information message code wise
+  I0001: '画像をアップロードが完了しました。'
 
   #error message code wise
   E0001: '最初にログインする必要があります。'
   E0002: 'ユーザー名とパスワードが一致しません。'
+  E0003: 'を入力してください。'

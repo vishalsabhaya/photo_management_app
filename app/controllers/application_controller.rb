@@ -3,7 +3,4 @@ class ApplicationController < ActionController::Base
   include Authentication
   include SessionHelper
 
-  def dashbord
-  end
-
 end

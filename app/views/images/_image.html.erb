@@ -1,0 +1,9 @@
+<div class="content-block">
+  <div class="block-title">
+    <%= image.title %>
+  </div>
+  <div>
+    <%= image_tag(image.photo, class: 'block-image') if image.photo.attached?%>
+  </div>
+
+</div>

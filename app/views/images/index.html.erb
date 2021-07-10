@@ -1,0 +1,6 @@
+<% page_title t('image_list.title') %>
+<h1><%= t('image_list.title') %></h1>
+<div class="field">
+  <%= link_to t('image_upload.title'), new_image_path%>
+</div>
+<%= render @images %>
