@@ -3,7 +3,9 @@ require 'test_helper'
 class ImageTest < ActiveSupport::TestCase
   def setup
     @user = User.new(user_name: "unifa12345", password: "testunifa123")
-    @image = @user.images.build(title: 'image 1', photo: upload_file("#{Rails.root}/public/images/home_main_family.jpeg"), created_at: DateTime.now()-2, updated_at: DateTime.now()-2)
+    @image = @user.images.build(title: 'image 1')
+    @image.photo.attach(io: File.open("#{Rails.root}/public/images/home_main_family.jpeg"), filename: "home_main_family.jpeg", content_type: 'image/jpg')
+    @image2 = @user.images.build(title: 'image 2')
   end
 
   test "object is valid" do
@@ -21,8 +23,7 @@ class ImageTest < ActiveSupport::TestCase
   end
 
   test "photo must be present" do
-    @image.photo.purge #delete image
-    assert_not @image.valid?
+    assert_not @image2.valid?
   end
 
 end
