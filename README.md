@@ -16,7 +16,7 @@ https://github.com/vishalsabhaya/photo_management_app.git
 
   - ruby-2.7.1
 
-* Ruby version
+* Rails version
 
   - Rails-6.1.4
 
@@ -39,6 +39,12 @@ https://github.com/vishalsabhaya/photo_management_app.git
 * Database config
 
   - database used: *sqlite3*
+
+  - create database
+
+  ```
+  rake db:create
+  ```
 
   - run migration to reflect database changes.
 
@@ -66,9 +72,9 @@ https://github.com/vishalsabhaya/photo_management_app.git
 
 #### Running Tests
 
-Test cases written using *RSpec*
+  Test cases written using *minitest*
 
-Run test cases using
+  Run test cases using
 
   ```
   rails test
