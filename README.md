@@ -51,3 +51,29 @@ https://github.com/vishalsabhaya/photo_management_app.git
   ```
   rake db:seed
   ```
+
+* MyTweetApp setting
+
+  - rename secrets.example.yml to secrets.yml
+
+  - do setting in secrets.yml
+
+* test case targeted
+
+  - model : data validation
+
+  - controller : routes test
+
+#### Running Tests
+
+Test cases written using *RSpec*
+
+Run test cases using
+
+  ```
+  rails test
+  ```
+
+## Author
+
+* **Vishal Sabhaya** - [GitHub profile](https://github.com/vishalsabhaya/)
