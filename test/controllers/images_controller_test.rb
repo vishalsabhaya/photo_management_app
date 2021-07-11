@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ImagesControllerTest < ActionDispatch::IntegrationTest
   def setup
-    @user = User.create(user_name: 'test_user', password: 'test_password', password_confirmation: 'test_password')
+    @user = User.new(user_name: "unifa12345", password: "testunifa123")
   end
 
   test 'should not render routes if unauthenticated' do
