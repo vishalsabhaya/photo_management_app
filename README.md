@@ -46,13 +46,13 @@ https://github.com/vishalsabhaya/photo_management_app.git
   rake db:create
   ```
 
-  - run migration to reflect database changes.
+  - run migration to reflect database changes
 
   ```
   rake db:migrate
   ```
 
-* Create sample data for app.
+* Create sample data for app
 
   ```
   rake db:seed

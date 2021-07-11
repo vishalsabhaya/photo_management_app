@@ -9,6 +9,7 @@ class ImagesController < ApplicationController
     @image = Image.new
   end
 
+  #upload image to server
   def create
     @image = current_user.images.build(image_params)
     if @image.save
@@ -18,6 +19,7 @@ class ImagesController < ApplicationController
     end
   end
 
+  #image tweet to MyTweetApp
   def tweet
     image = Image.find_by(id: params[:image_id])
     tweet_image = {
