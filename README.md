@@ -29,6 +29,7 @@ https://github.com/vishalsabhaya/photo_management_app.git
 
   - Node.js
   > Please download and install Node.js https://nodejs.org/en/download/
+  > Note: Node.js version must be *>=10.17.0*
 
   - Bundle to install app dependency.
 
