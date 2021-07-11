@@ -15,6 +15,7 @@ module Authentication
   def sign_out
     session.delete(:user_name)
     session.delete(:token)
+    session.delete(:tweet_token)
     @current_user = nil
     reset_session
   end

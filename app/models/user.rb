@@ -9,4 +9,6 @@ class User < ApplicationRecord
   # password must be reuqired, miminum 8 character
   validates :password, presence: true,
                        length: {minimum:8}
+
+  has_many :images
 end

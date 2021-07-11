@@ -1,0 +1,19 @@
+// Place all the styles related to the images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content-block {
+  float: left;
+  width: 13.5%;
+  padding: 5px;
+}
+.content-block .block-title {
+  text-align: center;
+  padding: 10px;
+}
+.content-block .block-image {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ccc;
+  margin: 5px 0 5px 0;
+}

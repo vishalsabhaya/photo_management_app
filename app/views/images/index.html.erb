@@ -1,0 +1,7 @@
+<% page_title t('image_list.title') %>
+<h1><%= t('image_list.title') %></h1>
+<%= render 'tweet_link' %>
+<div class="field">
+  <%= link_to t('image_upload.title'), new_image_path%>
+</div>
+<%= render @images %>

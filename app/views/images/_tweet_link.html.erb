@@ -1,0 +1,5 @@
+<% if authorized? %>
+  <h4><%= t('image_upload.tweet_app_approve') %></h4>
+<% else %>
+  <%= link_to t('image_upload.tweet_app_link'), oauth_authorize_path %>
+<% end %>

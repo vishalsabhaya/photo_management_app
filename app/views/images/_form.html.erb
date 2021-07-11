@@ -1,0 +1,17 @@
+<%= render partial: 'shared/errors', locals: { object: @image } %>
+<div>
+  <%= form_for @image do |f| %>
+    <div class="field">
+      <%= f.label t('image_upload.image_title') %>
+      <%= f.text_field :title, value: params[:image].present? ? params[:image][:title] : nil, tabindex: 0 %>
+    </div>
+    <div class="field">
+      <%= f.label t('image_upload.image_file') %>
+      <%= f.file_field :photo, tabindex: 1 %>
+    </div>
+    <div class="field">
+      <%= f.submit t('button.upload'), tabindex: 2 %>
+      <%= link_to t('button.cancel'), images_path, tabindex: 3 %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,11 @@
+<div class="content-block">
+  <div class="block-title">
+    <%= image.title %>
+  </div>
+  <div>
+    <%= image_tag(image.photo, class: 'block-image') if image.photo.attached?%>
+  </div>
+  <div class="block-title">
+    <%= link_to t('button.tweet'), image_tweet_path(image) if authorized? %>
+  </div>
+</div>

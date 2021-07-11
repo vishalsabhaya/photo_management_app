@@ -1,0 +1,10 @@
+<div>
+  <ul>
+    <% if flash[:error] %>
+      <li class='text-red'><%= flash[:error] %></li>
+    <% end %>
+    <% if flash[:notice] %>
+      <li><%= flash[:notice] %></li>
+    <% end %>
+  </ul>
+</div>
