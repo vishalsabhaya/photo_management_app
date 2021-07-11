@@ -18,6 +18,20 @@ class ImagesController < ApplicationController
     end
   end
 
+  def tweet
+    image = Image.find_by(id: params[:image_id])
+    tweet_image = {
+      text: image.try(:title),
+      url: url_for(image.photo)
+    }
+    response = TweetApi.post_api(url: "#{Rails.application.secrets.site_path}/api/tweets", body: tweet_image,token: get_auth_token)
+    if response.code == "201"
+      redirect_to root_url, notice: I18n.t('I0002')
+    else
+      redirect_to root_url, error: I18n.t('E0004')
+    end
+  end
+
   private
   # strong params for image form
   def image_params

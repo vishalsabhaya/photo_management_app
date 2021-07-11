@@ -37,17 +37,22 @@ ja:
     title: '写真アップロード'
     image_title: 'タイトル'
     image_file: '画像ファイル'
+    tweet_app_link: 'MyTweetAppと連携'
+    tweet_app_approve: 'MyTweetAppと承認'
 
   button:
     sign_in: 'ログインする'
     sign_out: 'ログアウト'
     upload: 'アップロード'
     cancel: 'キャンセル'
+    tweet: 'ツイートする'
 
   # information message code wise
   I0001: '画像をアップロードが完了しました。'
+  I0002: 'ツイートされました。'
 
   #error message code wise
   E0001: '最初にログインする必要があります。'
   E0002: 'ユーザー名とパスワードが一致しません。'
   E0003: 'を入力してください。'
+  E0004: '不明なエラーが発生しました。管理者に連絡してください。'

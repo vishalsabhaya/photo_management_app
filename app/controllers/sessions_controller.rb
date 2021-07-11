@@ -9,9 +9,7 @@ class SessionsController < ApplicationController
   # authenticate user information & allow to access image screens
   def create
     user_sign_in_params; return if performed?
-
     user = User.find_by(user_name: params[:session][:user_name])
-
     if user&.authenticate(params[:session][:password])
       sign_in(user)
       redirect_to root_path

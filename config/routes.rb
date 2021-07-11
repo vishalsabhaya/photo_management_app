@@ -9,6 +9,12 @@ Rails.application.routes.draw do
   delete '/sign_out', to: 'sessions#destroy', as: :sign_out
 
   # image upload & list routes
-  resources :images, only: [:index, :new, :create]
+  resources :images, only: [:index, :new, :create] do
+    get :tweet
+  end
+
+  # oauth routes for MyTweetApp
+  get 'oauth/callback', to: 'oauth_tweet_image#callback'
+  get 'oauth/authorize', to: 'oauth_tweet_image#authorize'
 
 end
