@@ -29,6 +29,7 @@ https://github.com/vishalsabhaya/photo_management_app.git
 
   - Node.js
   > Please download and install Node.js https://nodejs.org/en/download/
+  > Note: Node.js version must be *>=10.17.0*
 
   - Bundle to install app dependency.
 
@@ -46,13 +47,13 @@ https://github.com/vishalsabhaya/photo_management_app.git
   rake db:create
   ```
 
-  - run migration to reflect database changes.
+  - run migration to reflect database changes
 
   ```
   rake db:migrate
   ```
 
-* Create sample data for app.
+* Create sample data for app
 
   ```
   rake db:seed
